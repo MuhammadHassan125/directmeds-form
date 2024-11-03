@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directmeds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* Add a red outline to invalid fields */
+        .invalid-field {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-center">
+            <img src="./assets/images/RMD Logo Final.png" alt="Direct Meds" class="img-fluid">
+        </div>
+    </nav>
+    <section class="container questions-stage">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12">
+                <div class="card">
+                    <div class="progress-container">
+                        <p class="progressnotice">Your Progress</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 81.25%;"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1>Let's get your information</h1>
+                        <p>Before you select your medication, we'll need some more info. </p>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="shipping_firstname">First Name</label><br>
+                                <input type="text" id="shipping_firstname" class="form-control ub-input-item single text form_elem_first_name"
+                                    required="" name="shipping_firstname" placeholder="First Name*">
+                            </div>
+                            <div class="col">
+                                <label for="shipping_lastname">Last Name</label><br>
+                                <input type="text" id="shipping_lastname" class="form-control ub-input-item single text form_elem_last_name"
+                                    required="" name="shipping_lastname" placeholder="Last Name*">
+                            </div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col-12">
+                                <label for="shipping_phone">Phone Number</label> <br>
+                                <input type="tel" id="shipping_phone"
+                                    class="form-control ub-input-item single text form_elem_phone_number" required=""
+                                    name="shipping_phone" placeholder="(000) 000-0000" minlength="10"
+                                    pattern="\(\d{3}\) \d{3}-\d{4}">
+                            </div>
+
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col-12">
+                                <label for="shipping_email">Email</label> <br>
+                                <input id="email" type="email"
+                                    class="form-control ub-input-item single text form_elem_email duplicated-input"
+                                    required="" name="shipping_email" placeholder="Email Address*">
+                            </div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col-12">
+                                <label for="shipping_email_verification">Please verify your email:</label> <br>
+                                <input id="emailVerification" type="email"
+                                    class="form-control ub-input-item single text form_elem_email duplicated-input"
+                                    required="" name="shipping_email_verification" placeholder="Confirm Email Address*">
+                                <div id="emailWarning" style="display:none;color:red;font-weight:700;">The email
+                                    addresses you entered do not match. Please check and ensure both entries are the
+                                    same.</div>
+                            </div>
+                            <div class="spacer"></div>
+                            <h4>Create your Patient Portal Password:</h4>
+                            <div class="spacer"></div>
+                            <div class="col">
+                                <label for="password">Create Password</label><br>
+                                <input type="password" class="form-control duplicated-input" id="psw" name="password"
+                                    pattern="[a-zA-Z0-9!@#$%^*]{8,}" title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+                                    required="">
+                            </div>
+                            <div class="col">
+                                <label for="password_verification">Confirm Password</label><br>
+                                <input type="password" id="psw2" name="password_verification"
+                                    class="form-control duplicated-input" data-pair="psw" pattern="[a-zA-Z0-9!@#$%^*]{8,}"
+                                    title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+                                    required="">
+                            </div>
+
+                            <div id="message">
+                                <span>Password must contain the following:</span><br><br>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="special" class="invalid">A <b>special character</b> (!@#$%^*)</p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                            </div>
+                            <div id="passWarning" style="display:none;color:red;font-weight:700;">The passwords you
+                                entered do not match. Please check and ensure both entries are the same.</div>
+                            <div class="spacer">&nbsp;</div>
+                            <h4>Where do we send your medication? </h4>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col-12">
+                                <label for="shipping_address">Address</label><br>
+                                <input type="text" id="shipping_address1"
+                                    class="form-control ub-input-item single text form_elem_address" required=""
+                                    name="shipping_address1" placeholder="Street Address*">
+                                <div id="poBoxWarning" style="display:none;color:red;font-weight:700;">Please enter an
+                                    address that is not a PO Box.</div>
+                            </div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col-12">
+                                <label for="shipping_city">City</label><br>
+                                <input type="text" id="shipping_city" class="form-control ub-input-item single text form_elem_city"
+                                    required="" name="shipping_city" placeholder="City/Town*">
+                            </div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="col">
+                                <label for="shipping_state">State</label><br>
+                                <select name="shipping_state" required="" id="ShippingState"
+                                    class="form-control ub-input-item single text form_elem_state">
+                                    <option value="" disabled="" selected="">Select State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="shipping_zip">ZIP Code</label><br>
+                                <input type="text" id="shipping_zip" class="form-control ub-input-item single text form_elem_zip"
+                                    required="" name="shipping_zip" placeholder="ZIP Code*">
+                            </div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="spacer">&nbsp;</div>
+                            <button type="button" id="nextButton" class="btn btn-lg ctaBtn1 btnsubmit">
+                                Save &amp; Continue &gt;&gt;
+                            </button>
+
+                            <div class="spacer">&nbsp;</div>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="spacer">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      document.getElementById('nextButton').addEventListener('click', function (event) {
+    event.preventDefault(); 
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach(input => {
+        input.classList.remove('invalid-field');
+    });
+
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (input.required && !input.value) {
+            input.classList.add('invalid-field');
+            isValid = false;
+        }
+    });
+
+    const email = document.getElementById('email').value;
+    const emailVerification = document.getElementById('emailVerification').value;
+    if (email !== emailVerification) {
+        document.getElementById('emailWarning').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('emailWarning').style.display = 'none';
+    }
+
+    const password = document.getElementById('psw').value;
+    const passwordVerification = document.getElementById('psw2').value;
+    if (password !== passwordVerification) {
+        document.getElementById('passWarning').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('passWarning').style.display = 'none';
+    }
+
+    // Agar sab kuch theek hai, toh navigate karen
+    if (isValid) {
+        window.location.href = 'select.html'; 
+        console.log('pka')
+    } else {
+        alert('Please fill in all required fields correctly.');
+    }
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybxt5eUKpYRVJ9+KKMK9M63vC/TOAs2h+bg4syjA+8zm+5Q4K" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-8kA9BDKQGA/O6v+0XjoDp0tlFr8Uuj4/g9pCKRiGHkJoMYR5g6+LPmT8Z8pVHJfd" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

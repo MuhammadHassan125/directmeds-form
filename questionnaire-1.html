@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directmeds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-center">
+            <img src="./assets/images/RMD Logo Final.png" alt="Direct Meds" class="img-fluid">
+        </div>
+    </nav>
+    <section class="container questions-stage">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12" id="card-master">
+                <div class="card step">
+                    <div class="progress-container">
+                        <p class="progressnotice">Your Progress</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1>Are you male or female?</h1>
+                        <p>Our sex and hormones impact how our bodies metabolize food. </p>
+                        <br>
+                        <div class="radioselection d-flex">
+                            <input type="radio" class="col-sm-6 triggerNext" name="intake_gender" id="male"
+                                value="male">
+
+                            <label for="male" class="col">
+                                <i class='bx bx-male-sign'></i>
+                                <br>Male
+                            </label>
+                            <input type="radio" class="col-sm-6 triggerNext" name="intake_gender" id="female"
+                                value="female">
+                            <label for="female" class="col">
+                                <i class='bx bx-female-sign'></i>
+                                <br>Female
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-badge deactivate-link">
+        <a href="#" target="_blank"
+            title="Verify LegitScript Approval" previewlistener="true"><img
+                src="./assets/images/footerlogo.png" alt="LegitScript approved" width="140"
+                height="120" ></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="./assets/js/questionnaire-1.js"></script>
+</body>
+
+</html>

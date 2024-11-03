@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directmeds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="couponBannerFiller"
+        style="display:block;visibility:hidden;opacity:0;width:100%;padding:5px 10px;font-weight:700;">A coupon has been
+        applied to your order! Complete your order for $100 off your first month!</div>
+    <div id="couponBanner"
+        style="position:fixed;top:0;z-index:100;width:100%;padding:5px 10px;background-color:#0094FF;color:#fff;text-align:center;font-weight:700;">
+        A coupon has been applied to your order! Complete your order for $100 off your first month!</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-center">
+            <img src="./assets/images/RMD Logo Final.png" alt="Direct Meds" class="img-fluid">
+        </div>
+    </nav>
+    <section class="container intersticial">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+
+                    <h3 style="font-weight:300;" class="text-center">Your order is ready for payment.</h3>
+              
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col stats-item inversebg">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./assets/images/Base Vial Image Package Example.png" class="img-fluid">
+                            </div>
+                            <div class="col my-auto">
+                                dffd assa <br>
+                                lorem ipsum<br>
+                                new york , AK 00000 <br>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-4  text-center">
+                                Semaglutide Medication &amp; Supplies
+                            </div>
+                            <div class="col my-auto textalt2 text-end">
+                                Monthly supply <span style="font-size:12px;line-height:1;">(Cancel anytime)</span>
+                            </div>
+                            <div class="col-4 my-auto  text-end" style="padding-right:25px;">
+                                <span class="was">$1095</span> $297
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col  text-end">
+                                Telemed Visits with Doctor/Evaluation
+                            </div>
+
+                            <div class="col-4 my-auto  text-end" style="padding-right:25px;">
+                                <span class="was">$99</span>
+                                INCLUDED!
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col  text-end">
+                                COUPON: $100 off your first month! </div>
+
+                            <div class="col-4 my-auto  text-end" style="padding-right:25px;">
+                                -$100 </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col  text-end">
+                                Next-day UPS Rush Delivery <br><span class="textalt2">(All medications are ice-packed
+                                    and insured.)</span>
+                            </div>
+
+                            <div class="col-4 my-auto  text-end" style="padding-right:25px;">
+                                FREE
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <div class="row d-flex totals">
+                            <div class="col" style="padding-left:25px;">
+                                <h2>Total</h2>
+                            </div>
+                            <div class="col text-end" style="padding-right:25px;">
+                                <h2><s style="color:red">$297</s>$197</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col text-center">
+                       That's it! With Direct Meds, our pricing is all inclusive.
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col">
+                        <div class="inversebg">
+                            <div class="inversehdr"><i class="bi bi-shield-lock-fill"></i> Secure Payment</div>
+                            <div class="pcinner">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>Payment Info</h3>
+                                    </div>
+                                    <div class="col text-end">
+                                        <img src="./assets/images/cards.png" style="width:150px;" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="billing_cardnumber">Card Number</label><br>
+                                        <div class="os3-cardnumber__wrapper">
+                                            <div style="position: relative;">
+                                                <div class="os3-cardbrand os3-cardbrand--unknown os3-cardbrand--error"
+                                                    id="cardbrand-image"><svg focusable="false"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 21"
+                                                        height="18px">
+                                                        <g transform="translate(0 2)">
+                                                            <path
+                                                                d="M26.58 19H2.42A2.4 2.4 0 0 1 0 16.62V2.38A2.4 2.4 0 0 1 2.42 0h24.16A2.4 2.4 0 0 1 29 2.38v14.25A2.4 2.4 0 0 1 26.58 19zM10 5.83c0-.46-.35-.83-.78-.83H3.78c-.43 0-.78.37-.78.83v3.34c0 .46.35.83.78.83h5.44c.43 0 .78-.37.78-.83V5.83z"
+                                                                opacity=".2"></path>
+                                                            <path
+                                                                d="M25 15h-3c-.65 0-1-.3-1-1s.35-1 1-1h3c.65 0 1 .3 1 1s-.35 1-1 1zm-6 0h-3c-.65 0-1-.3-1-1s.35-1 1-1h3c.65 0 1 .3 1 1s-.35 1-1 1zm-6 0h-3c-.65 0-1-.3-1-1s.35-1 1-1h3c.65 0 1 .3 1 1s-.35 1-1 1zm-6 0H4c-.65 0-1-.3-1-1s.35-1 1-1h3c.65 0 1 .3 1 1s-.35 1-1 1z"
+                                                                opacity=".3"></path>
+                                                        </g>
+                                                        <g transform="translate(18)" class="os3-cardbrand__exclaim">
+                                                            <path
+                                                                d="M7 14A7 7 0 1 1 7 0a7 7 0 0 1 0 14zM6 3v4a1 1 0 0 0 2 0V3a1 1 0 0 0-2 0zm1 8.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z">
+                                                            </path>
+                                                        </g>
+                                                    </svg><img class="os3-cardbrand__front" id="cardbrand__front"
+                                                        role="presentation" alt="card"></div><input type="tel" name=""
+                                                    required="" id="CreditCardNumber" alt="Credit Card Number" value=""
+                                                    data-validation="required" class="form-control required"
+                                                    placeholder="••••••••••••••••" maxlength="16"
+                                                    autocomplete="cc-number" inputmode="numeric">
+                                            </div>
+                                            <div id="cardbrand-error" class="os3-cardbrand__error-message"
+                                                style="display: none;"></div><input type="tel" name="billing_cardnumber"
+                                                required="" id="" alt="Credit Card Number" value=""
+                                                data-validation="required" class="form-control required os3-hide"
+                                                placeholder="••••••••••••••••" maxlength="16">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="billing_cardexp_month">Exp Month</label><br>
+                                        <select name="billing_cardexp_month" id="ExpMonth"
+                                            class=" form-control  input-lg required">
+                                            <option value="01">
+                                                01 - January </option>
+                                            <option value="02">
+                                                02 - February </option>
+                                            <option value="03">
+                                                03 - March </option>
+                                            <option value="04">
+                                                04 - April </option>
+                                            <option value="05">
+                                                05 - May </option>
+                                            <option value="06">
+                                                06 - June </option>
+                                            <option value="07">
+                                                07 - July </option>
+                                            <option value="08">
+                                                08 - August </option>
+                                            <option value="09">
+                                                09 - September </option>
+                                            <option value="10">
+                                                10 - October </option>
+                                            <option value="11">
+                                                11 - November </option>
+                                            <option value="12">
+                                                12 - December </option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="billing_cardexp_year">Exp Year</label><br>
+                                        <select alt="Exp Year" name="billing_cardexp_year" id="ExpYear" required=""
+                                            class="form-control  input-lg  required">
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                            <option value="2031">2031</option>
+                                            <option value="2032">2032</option>
+                                            <option value="2033">2033</option>
+                                            <option value="2034">2034</option>
+                                            <option value="2035">2035</option>
+                                            <option value="2036">2036</option>
+                                            <option value="2037">2037</option>
+                                            <option value="2038">2038</option>
+                                            <option value="2039">2039</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="row d-flex mb-3">
+                                    <div class="col-4 col-sm-3">
+                                        <label for="billing_cardcvv">Cvv</label><br>
+                                        <input type="text" alt="CVV"
+                                            class="form-control ub-input-item single text form_elem_first_name required"
+                                            maxlength="4" required="" name="billing_cardcvv" value="" placeholder="•••"
+                                            data-toggle="tooltip" data-placement="auto left" title="First Name"
+                                            data-validation="required">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="checkbox" name="acknowledge_0" value="yes" required=""> I agree to
+                                        the <a href="terms.php" target="_blank" previewlistener="true">Terms and
+                                            Conditions</a>, <a href="privacy.php" target="_blank"
+                                            previewlistener="true">Privacy Policy</a>, and I understand and acknowledge
+                                        the risks and benefits of the prescribed drug. I acknowledge that my
+                                        prescription will be reviewed by a medical practitioner for final approval
+                                        before being shipped to me.
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button class="btn ctaBtn1 btnsubmit">
+                                        Continue to Medical Intake Form
+                                    </button>
+                                </div>
+                                <br>
+                                <div class="d-flex justify-content-center"><img src="./assets/images/securicons.png" class="img-fluid"></div>
+                                <br>
+                                <hr>
+
+                                <div>
+                                    <div><i class="bx bx-x"></i> No Monthly Membership Fees</div>
+                                    <div><i class="bx bx-x"></i> No Insurance Required</div>
+                                    <div><i class="bx bx-x"></i> No Monthly Access Fees</div>
+                                    <div><i class="bx bx-check"></i> HSA Accepted</div>
+                                    <div><i class="bx bx-check"></i> Includes Medication &amp; Telemed Visits
+                                    </div>
+                                    <div><i class="bx bx-check"></i> Price Lock Guarantee</div>
+                                    <div><i class="bx bx-check"></i> Patient Satisfaction Guarantee</div>
+                                    <div><i class="bx bx-check"></i> All Medications Compounded in the USA</div>
+                                    <div><i class="bx bx-check"></i> Cancel anytime</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3 text-center">
+                                    <div class="spacer"></div>
+                                    <div class="col-sm-12 rating-wht">
+                                        <strong>5.0</strong> <i class="bx bxs-star"></i><i
+                                            class="bx bxs-star"></i><i class="bx bxs-star"></i><i
+                                            class="bx bxs-star"></i><i class="bx bxs-star"></i><br>
+                                        <span style="font-size:12px;color:#b8f0fa;">Rated for all-inclusive pricing,
+                                            delivery &amp; effectiveness.</span>
+                                        <br><br>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="squares">
+                    <div class="row">
+
+                        <div class="col-3 d-flex justify-content-center">
+                            
+                                <img src="./assets/images/guarantee.png" class="img-fluid">
+                            
+                        </div>
+                        <div class="col my-auto">
+                            <h4>Patient Satisfaction Guarantee</h4>
+                            <p class="textalt2">If at any time you are unsatisfied with your Direct Meds prescription
+                                weight loss program, we give you your money back, it's that simple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-badge deactivate-link">
+        <a href="#" target="_blank" title="Verify LegitScript Approval" previewlistener="true"><img
+                src="./assets/images/footerlogo.png" alt="LegitScript approved" width="140" height="120"></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

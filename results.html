@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directmeds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-center">
+            <img src="./assets/images/RMD Logo Final.png" alt="Direct Meds" class="img-fluid">
+        </div>
+    </nav>
+    <section class="container intersticial">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-12">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h1>CONGRATULATIONS!</h1>
+                <h3 style="font-weight:300;">Welcome to the Direct Meds GLP-1 Weight Loss Prescription plan!</h3>
+                <br>
+                <p class="text-center">Your authorization is reserved for: <span id="timer" class="textalt">09:25</span>
+                </p>
+                <br>
+                <div class="row stats">
+                    <div class="col stats-item text-center">
+                        Current Weight<br>
+                        <h1 id="currentWeightDisplay"></h1>
+                    </div>
+                    <div class="col stats-item text-center">
+                        Your Age<br>
+                        <h1>29</h1>
+                    </div>
+                    <div class="col stats-item text-center">
+                        Goal Weight<br>
+                        <h1 id="targetWeightDisplay">lbs</h1>
+                    </div>
+                </div>
+                <img src="./assets/images/Group 138.png" class="img-fluid">
+                <br><br>
+                <div class="row stats">
+                    <div class="col stats-item text-center">
+                        You're all set to lose<br>
+                        <h1 id="looseWeightDisplay"></h1>
+                    </div>
+                </div>
+
+                <br><br>
+                <h3 style="font-weight:300;text-align: center;">You are about to join thousands losing weight with
+                    Semaglutide &amp; Tirzepatide.</h3>
+                <span class="textalt text-center d-block">
+                    The same ingredients in (Ozempic® &amp; Mounjaro®)
+                </span>
+                <div class="spacer">&nbsp;</div>
+                <div class="row">
+                    <div class="col">
+                        <div class="inversebg">
+                            <div class="inversehdr">
+                                <h2>What's Next:</h2>
+                            </div>
+                            <div class="inverseinner">
+                                <div>
+                                    <h1><span style="color:#51B3FA">1.</span> <span style="font-size:21px;">Select Your
+                                            Prescription:</span></h1>
+                                    <p style="font-weight:300 !important;">You'll choose between Semaglutide &amp;
+                                        Tirzepatide on the next page.</p>
+                                </div>
+                                <div>
+                                    <h1><span style="color:#51B3FA">2.</span> <span style="font-size:21px;">Authorize
+                                            Your Card:</span></h1>
+                                    <p style="font-weight:300 !important;">These medications are in high demand. We will
+                                        need to authorize your card today to secure your medication and telemed
+                                        appointment. (If your prescription is not approved, you will receive a full
+                                        refund.)</p>
+                                </div>
+
+                                <div>
+                                    <h1><span style="color:#51B3FA">3.</span> <span style="font-size:21px;">Complete The
+                                            Medical Intake:</span></h1>
+                                    <p style="font-weight:300 !important;">Once your payment is made, we will send you
+                                        an email with instructions on how to access your Direct Meds patient portal and
+                                        complete a few medical questions for the doctor.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h1><span style="color:#51B3FA">4.</span> <span style="font-size:21px;">Doctor's
+                                            Review:</span></h1>
+                                    <p style="font-weight:300 !important;">The doctor will review your chart by <strong
+                                            style="font-weight:600;color:#9638c2">11/02/2024 </strong>. (Usually within
+                                        5 hours including weekends.)
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1><span style="color:#51B3FA">5.</span> <span style="font-size:21px;">Approval and
+                                            Shipping:</span></h1>
+                                    <p style="font-weight:300 !important;">Once approved, our FDA-registered pharmacy
+                                        will ship your ice-packed medication with UPS next-day rush delivery. Orders
+                                        ship same day, except Fridays. A tracking number will be provided to your email
+                                        address when your medication ships.
+                                    </p>
+                                </div>
+
+                                <div class="text-center">
+                                    <h2><span style="color:#51B3FA;font-size:80%">YOUR EXPECTED DELIVERY DATE
+                                            IS</span><br> <span style="font-size:21px;">Wednesday, November
+                                            6!</span></h2>
+                                    <p style="font-weight:300 !important;">
+                                    </p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <div><i class="bi bi-ban icopk"></i> No Monthly Membership Fees<br> <i
+                                            class="bi bi-ban icopk"></i> No Hidden Fees <br><i
+                                            class="bi bi-check icopk"></i> HSA Accepted</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer">&nbsp;</div>
+                <h1 class="text-center">
+                    Next step is to choose your preferred medication
+                </h1>
+                <br>
+                <div class="row">
+                    <div>
+                        <a href="#" previewlistener="true">
+                            <div class="d-grid gap-2">
+                                <button class="btn ctaBtn1" id="nextButton" type="button">
+                                    Choose My Preferred Prescription &gt;&gt;
+                                </button>
+                            </div>
+                        </a><br>
+                        <br>
+                    </div>
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3 text-center">
+                                <div class="col-sm-12 rating-wht">
+                                    <strong>5.0</strong> <i class="bx bxs-star"></i><i
+                                        class="bx bxs-star"></i><i class="bx bxs-star"></i><i
+                                        class="bx bxs-star"></i><i class="bx bxs-star"></i><br>
+                                    <span style="font-size:12px;color:#b8f0fa;">Customers rate Direct Meds 5 Stars
+                                        for all-inclusive pricing, speed of delivery &amp; product
+                                        effectiveness.</span>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="squares">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <img src="./assets/images/guarantee.png" class="img-fluid">
+                        </div>
+                        <div class="col my-auto">
+                            <h4>Patient Satisfaction Guarantee</h4>
+                            <p class="textalt2">If at any time you are unsatisfied with your Direct Meds prescription
+                                weight loss program, we give you your money back, it's that simple.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="squares">
+                    <div class="d-flex justify-content-center">
+                        <img src="./assets/images/new-doctor-image.png" class="img-fluid doctor-img">
+                    </div>
+                    <div class="spacer">&nbsp;</div>
+                    <div class="row">
+                        <div class="col sq1">
+                            <i class="bx bx-arrow-back bx-rotate-90"></i>
+                            <h5>Insurance Accepted</h5>
+                            <p style="font-weight:300;">We accept HSA and FSA cards for payment.</p>
+                        </div>
+                        <div class="col sq1">
+                            <i class="bx bxs-medal"></i>
+                            <h5>Recommended By Doctors</h5>
+                            <p style="font-weight:300;">Medical professionals recommend Direct Meds for your weight
+                                loss journey.</p>
+                        </div>
+                        <div class="col sq1">
+                            <i class="bx bxs-rocket"></i>
+                            <h5>Fast Shipping</h5>
+                            <p style="font-weight:300;">We ship medications the same day for fast delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer">&nbsp;</div>
+                <div class="spacer">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function () {
+            window.location.href = 'shipping.html';
+        })
+
+        const targetWeight = localStorage.getItem('targetWeight');
+        if (targetWeight) {
+            document.getElementById('targetWeightDisplay').innerText = targetWeight + " lbs";
+        } else {
+            document.getElementById('targetWeightDisplay').innerText = "Not set";
+        }
+
+        const currentWeight = localStorage.getItem('currentWeight'); 
+        if (currentWeight) {
+            document.getElementById('currentWeightDisplay').innerText = currentWeight + " lbs"; 
+        } else {
+            document.getElementById('currentWeightDisplay').innerText = "Not set"; 
+        }
+
+        const goalWeight = currentWeight - targetWeight;
+        if (goalWeight) {
+            document.getElementById('looseWeightDisplay').innerText = goalWeight + " lbs"; 
+        } else {
+            document.getElementById('looseWeightDisplay').innerText = "Not set"; 
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybZK6B7s0DmpvI29c0He0J4I3rJQihcG6Bch3M2ac3iRl65x" crossorigin="anonymous"></script>
+</body>
+
+</html>
